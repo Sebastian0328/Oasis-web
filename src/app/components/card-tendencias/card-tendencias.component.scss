@@ -1,0 +1,35 @@
+@import "../../../styles/variables";
+.card-tendencia{
+  background-image: url("../../../assets/fondo\ tendencias.webp");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+
+  h1{
+    color: aliceblue;
+    font-family: $font-ter;
+  }
+  p{
+    font-family: $font-ter;
+    color: aliceblue;
+  }
+  width: 100vw;
+  height: 100px;
+
+
+  .more-products{
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 0;
+    color: #F297B9;
+    padding: 5px;
+    width: max-content;
+    height: min-content;
+    // position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: $font-secondary;
+  }
+}

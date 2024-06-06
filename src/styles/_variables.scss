@@ -1,0 +1,16 @@
+// Definición de breakpoints
+$breakpoints: (
+  sm: 320px,
+  md: 768px,
+  lg: 1024px
+);
+ // Colors
+ $primary-color: #F297B9;
+$secondary-color: aliceblue;
+$text-color: #F17DBB;
+
+// Fonts
+$font-primary: 'Nunito Sans', sans-serif;
+$font-secondary: 'Anton', sans-serif;
+$font-ter: 'Quicksand', sans-serif;
+// Otros variables globales, si los necesitas
