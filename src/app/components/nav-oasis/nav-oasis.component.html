@@ -1,0 +1,34 @@
+<nav>
+  <!-- <div class="mobile-nav">
+    <img src="../../../assets/menu-hamburger.png" alt="menu hamburger" width="50px">
+        </div> -->
+  <button id="open" class="menu-burger" (click)="toggleMenu()">
+    <img
+      src="../../../assets/menu-hamburger.png"
+      alt="menu hamburger"
+      width="50px"
+    />
+  </button>
+  <div *ngIf="isMenuOpen" class="nav-pc" id="nav-id">
+    <ul class="nav-list">
+      <button  (click)="closeMenu()"  class="button-volver"><img src="../../../assets/CLOSE.png" alt="close"></button>
+      <li><a href="">ROPA</a></li>
+      <li><a href="">ACCESORIOS</a></li>
+      <li><a href="">PROMOCIONES</a></li>
+      <li><a href="">NOSOTROS</a></li>
+    </ul>
+  </div>
+
+  <div class="logo-nav">
+    <img src="../../../assets/logo png.png" alt="oasis" width="100px" />
+  </div>
+
+  <div class="login-shop">
+    <div class="login">
+      <img src="../../../assets/user-icon.png" alt="user" width="50px" />
+    </div>
+    <div class="shop">
+      <img src="../../../assets/carrito.png" alt="carrito" width="50px" />
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,18 @@
+@import "../../../styles/variables";
+.tendencias{
+  background-image: url("../../../assets/fondo\ tendencias.webp");
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color:white;
+  font-family: $font-ter;
+  gap: 20px;
+  .products{
+    display: flex;
+    gap: 10px;
+
+  }
+
+
+}

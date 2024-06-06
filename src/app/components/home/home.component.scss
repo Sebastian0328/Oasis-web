@@ -1,0 +1,23 @@
+.home{
+  // background-image: url(../../../assets/Ropa\ Para\ Mujeres.jpeg);
+  // background-size: cover;
+  // // background-position: center;
+  // // background-repeat: repeat;
+  // height: 100vh;
+
+  display: flex;
+  flex-direction:column;
+display: flex;
+align-items:center;
+justify-content: end;
+  gap: 40px;; /* Crea un espacio vacío en la parte superior */
+
+  .container-products{
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 10px;
+
+  }
+}
