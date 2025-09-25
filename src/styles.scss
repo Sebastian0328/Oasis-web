@@ -1,12 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../src/styles/variables"; // Asegúrate de usar la ruta correcta
+@import "../src/styles/mixins";
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-image: url("../src/assets/Ropa\ Para\ Mujeres.jpeg");
-  background-size: cover;
-  background-position:20% -90px ;
 
+@include media-up(sm){
+  body{
+    background-image: url("../src/assets/Ropa\ Para\ Mujeres.jpeg");
+
+    background-position:20% -160px ;
+
+  }
+
+}
+@include media-up(md){
+  body{
+    background-position:20% -200px;
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+}
+@include media-up(lg){
+  body{
+    background-position:4% -250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
 }

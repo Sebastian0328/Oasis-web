@@ -1,0 +1,26 @@
+@import "../../../styles/variables"; // Asegúrate de usar la ruta correcta
+@import "../../../styles/mixins";
+.AllProducts{
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+
+  gap: 15px;
+  background-image:url("../../../assets/chicas-acostadas.png") ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  h2{
+    margin-top: 30px;
+    font-family: $font-ter;
+    color: $secondary-color;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+
+  }
+  ul{
+    list-style-type: none;
+
+  }
+
+}

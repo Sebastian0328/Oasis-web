@@ -1,0 +1,74 @@
+@import'../../../styles/variables';
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+  gap: 25px;
+  background: rgb(254,184,223);
+  background: linear-gradient(90deg, rgba(254,184,223,1) 0%, rgba(254,207,216,1) 35%, rgba(255,255,255,1) 100%),
+  url('../../../assets/fondo\ estrellas.webp');
+  background-repeat: no-repeat, no-repeat; /* Evitar que la imagen se repita */
+  background-size: cover, cover; /* Asegurarse de que la imagen cubra toda la pantalla */
+  background-position: center,center;
+
+  .corazon{
+    position: absolute;
+    right: 5%;
+    top:130%;
+
+
+
+  }
+  .corazon-2{
+    position:absolute ;
+    top:190%;
+    left: 3%;
+  }
+  .collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+.tittle{
+  display: flex;
+  justify-content: start;
+  h1{
+    color:#E9678F ;
+    font-family: $font-primary;
+    font-size: 35px;
+
+  }
+}
+.about-me{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 10px;
+gap: 2px;
+border: 1px solid #F17DBB;
+border-radius: 20px;
+  h3{
+    font-family: $font-primary;
+  }
+}
+.calificanos{
+  background-color: $secondary-color;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  h1{
+    font-family: $font-primary;
+  }
+  .points{
+    display: flex;
+    align-items: center;
+    p{
+      font-family: $font-primary;
+    }
+  }
+}

@@ -7,6 +7,7 @@ nav {
   padding: 2rem;
   justify-content: space-between;
 
+
   .button-volver {
     display: none;
     border: 0px;
@@ -43,6 +44,7 @@ nav {
     position: fixed;
     width: 100%;
     height: 100%;
+    gap: 0px;
 
     .menu-burger{
       display: block;
@@ -63,6 +65,10 @@ nav {
       gap: 1rem;
       color: black;
       z-index: 9999;
+      font-family: $font-primary;
+      text-decoration: underline;
+      font-size: 30px;
+
     }
     .nav-pc.visible{
       opacity: 1;
@@ -85,6 +91,7 @@ nav {
       }
     }
 
+
     .logo-nav {
       margin-top: 10px;
     }
@@ -96,34 +103,61 @@ nav {
       display: flex;
       gap: 10px;
     }
+    .logos{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
   }
   @include media-up(lg){
-
-    padding: 0%;
     display: flex;
-    justify-content: space-around;
-    .menu-burger{
+    justify-content: end;
+
+
+    .menu-burger {
       display: none;
     }
 
-    .nav-pc{
+    .nav-pc {
       display: flex;
+      flex-direction: row; // Alinea horizontalmente el menú en pantallas grandes
       background-color: transparent;
-      position: relative;
+      gap: 3rem;
+      justify-content: center;
+      align-items: start;
+      width: auto;
+      text-decoration: none;
+      font-family: $font-primary;
+      // font-weight: 700;
     }
+
     .nav-list {
-      .button-volver{
+      display: flex;
+      flex-direction: row; // Alinea horizontalmente los elementos de la lista en pantallas grandes
+      gap: 3rem;
+
+      .button-volver {
         display: none;
       }
-      display: flex;
-      flex-direction: row;
-      gap: 3rem;
-      list-style-type: none;
-      text-decoration: none;
+
       a {
+        color:white;
         text-decoration: none;
-        color: #f17dbb;
+        font-weight: 700;
       }
-  }
+      :hover{
+        a{
+          color: $text-color;
+          text-decoration:underline ;
+        }
+      }
+    }
+
+    .logos {
+      display: flex;
+      align-items: center;
+      gap: 20px; // Espacio entre el logo y los íconos de inicio de sesión y carrito
+      margin-top: 7px;
+    }
 }}
 
